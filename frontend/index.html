@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Gestion des Réclamations</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion des Réclamations</h1>
+        <form id="ticket-form">
+            <input type="text" id="ticket-title" placeholder="Titre de la Réclamation" required>
+            <textarea id="ticket-description" placeholder="Description" required></textarea>
+            <button type="submit">Soumettre</button>
+        </form>
+        <div id="tickets-list">
+            <h2>Liste des Réclamations</h2>
+            <ul id="ticket-items"></ul>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
